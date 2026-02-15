@@ -1,0 +1,108 @@
+body{
+    background-image:url("img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+/*--------------------------Main-container-------------------------*/
+.container{
+
+    width: 50%;
+    background: rgba(160, 200, 246, 0.9);
+    padding: 10px;
+    border-radius: 10px;      
+    margin:auto;
+    margin-top:20px;
+}
+/*--------------------- Headings------------------------------ */
+.container h1,
+.container h4{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*------------------ Sections---------------------------------- */
+.section,
+.section1,
+.section2{
+    margin-bottom: 10px;
+}
+/*-------------------------- Tables----------------------- */
+table{
+    width: 100%;
+    border-spacing: 10px;
+}
+td{
+    font-size: 18px;
+}
+.section1 table{
+    width: 100%;
+    border-spacing: 6px;
+}
+/*-------------------------section1-----------------*/
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.row label{
+    width: 110px;  
+    
+}
+
+.row input{
+    width: 60%;
+}
+
+
+/*-----------------------Inputs------------------------------ */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="tel"]{
+    width: 90%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+/*----------------------- Radio buttons--------------------- */
+.radio-group input{
+    margin-left: 10px;
+}
+
+/* ----------------Center class -----------------------------*/
+.center{
+    text-align: center;
+}
+
+/* ------------------Buttons ---------------------*/
+input[type="submit"],
+input[type="reset"]{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #1b5edb;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background: #0d47a1;
+}
+
+/*-----------------Mobile responsive-------------------*/
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+
+    table tr,
+    table td{
+        display: block;
+    }
+}
+
